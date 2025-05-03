@@ -69,7 +69,7 @@ export const recipesData: Recipe[] = [
     userId: "user_1",
     title: "RIZ BLANC",
     cooking_time: 25,
-    image: "",
+    image: "Riz_blanc.jpg",
     ingredients: [
       { name: "riz", quantity: "500 g" },
       { name: "eau", quantity: "1 L" },
@@ -89,7 +89,7 @@ export const recipesData: Recipe[] = [
     userId: "user_1",
     title: "RIZ AU GRAS",
     cooking_time: 40,
-    image: "Riz_blanc.jpg",
+    image: "Riz_au_gras.jpeg",
     ingredients: [
       { name: "riz", quantity: "500 g" },
       { name: "tomates", quantity: "2" },
