@@ -57,7 +57,9 @@ const RecipeDetail: React.FC<RecipeDetailProps> = ({ recipe, onBack, onEdit }) =
           <div className="rounded-lg overflow-hidden mb-6">
             {recipe.image ? (
               <Image
-                src={recipe.image}
+                width={200}
+                height={300}
+                src={"/images/"+recipe.image}
                 alt={recipe.title}
                 className="w-full object-cover"
               />

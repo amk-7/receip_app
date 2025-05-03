@@ -18,7 +18,9 @@ const RecipeCard: React.FC<RecipeCardProps> = ({ recipe, onClick }) => {
       <div className="aspect-video relative">
         {recipe.image ? (
           <Image 
-            src={'images/'+recipe.image} 
+            width={200}
+            height={300}
+            src={'/images/'+recipe.image} 
             alt={recipe.title} 
             className="w-full h-full object-cover"
           />
