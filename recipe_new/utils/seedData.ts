@@ -2,6 +2,7 @@ import { Recipe } from "./types";
 
 export const recipesData: Recipe[] = [
   {
+    id: "rec_1",
     userId: "user_1",
     title: "PÂTE DE MAÏS",
     cooking_time: 23,
@@ -24,6 +25,7 @@ export const recipesData: Recipe[] = [
     created_at: Date.now()
   },
   {
+    id: "rec_2",
     userId: "user_1",
     title: "WATCHI",
     cooking_time: 60,
@@ -45,6 +47,7 @@ export const recipesData: Recipe[] = [
     created_at: Date.now()
   },
   {
+    id: "rec_3",
     userId: "user_1",
     title: "COM",
     cooking_time: 20,
@@ -62,6 +65,7 @@ export const recipesData: Recipe[] = [
     created_at: Date.now()
   },
   {
+    id: "rec_4",
     userId: "user_1",
     title: "RIZ BLANC",
     cooking_time: 25,
@@ -81,6 +85,7 @@ export const recipesData: Recipe[] = [
     created_at: Date.now()
   },
   {
+    id: "rec_5",
     userId: "user_1",
     title: "RIZ AU GRAS",
     cooking_time: 40,
@@ -104,6 +109,7 @@ export const recipesData: Recipe[] = [
     created_at: Date.now()
   },
   {
+    id: "rec_6",
     userId: "user_1",
     title: "RAGOUT DE VIANDE",
     cooking_time: 75,
@@ -125,6 +131,7 @@ export const recipesData: Recipe[] = [
     created_at: Date.now()
   },
   {
+    id: "rec_7",
     userId: "user_1",
     title: "HARICOTS",
     cooking_time: 30,
@@ -143,6 +150,7 @@ export const recipesData: Recipe[] = [
     created_at: Date.now()
   },
   {
+    id: "rec_8",
     userId: "user_1",
     title: "DOYI",
     cooking_time: 30,
@@ -161,6 +169,7 @@ export const recipesData: Recipe[] = [
     created_at: Date.now()
   },
   {
+    id: "rec_9",
     userId: "user_1",
     title: "FOUFOU",
     cooking_time: 60,
@@ -178,6 +187,7 @@ export const recipesData: Recipe[] = [
     created_at: Date.now()
   },
   {
+    id: "rec_10",
     userId: "user_1",
     title: "COLICO",
     cooking_time: 60,
@@ -197,6 +207,7 @@ export const recipesData: Recipe[] = [
     created_at: Date.now()
   },
   {
+    id: "rec_11",
     userId: "user_1",
     title: "IGNAME FUMÉE",
     cooking_time: 30,
@@ -213,6 +224,7 @@ export const recipesData: Recipe[] = [
     created_at: Date.now()
   },
   {
+    id: "rec_12",
     userId: "user_1",
     title: "IGNAME PRÉPARÉE",
     cooking_time: 28,
@@ -231,6 +243,7 @@ export const recipesData: Recipe[] = [
     created_at: Date.now()
   },
   {
+    id: "rec_13",
     userId: "user_1",
     title: "SALADE",
     cooking_time: 15,
@@ -255,6 +268,7 @@ export const recipesData: Recipe[] = [
     created_at: Date.now()
   },
   {
+    id: "rec_14",
     userId: "user_1",
     title: "OMELETTE TOGOLAISE",
     cooking_time: 13,
@@ -268,7 +282,7 @@ export const recipesData: Recipe[] = [
     ],
     steps: [
       "Battre les œufs avec les légumes",
-      "Cuire à la poêle dans un peu d’huile"
+      "Cuire à la poêle"
     ],
     is_public: true,
     rating: 4,

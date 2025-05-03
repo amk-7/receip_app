@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import Link from "next/link";
-import { Button } from "@/components/ui/button";
 import { AuthProvider } from "@/context/AuthProvider";
 import Navigation from "@/components/blocks/navigation";
 

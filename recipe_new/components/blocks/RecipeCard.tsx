@@ -2,6 +2,7 @@
 import React from 'react';
 import { Recipe } from '@/utils/types';
 import { Card, CardContent, CardFooter } from '@/components/ui/card';
+import Image from 'next/image';
 
 interface RecipeCardProps {
   recipe: Recipe;
@@ -16,7 +17,7 @@ const RecipeCard: React.FC<RecipeCardProps> = ({ recipe, onClick }) => {
     >
       <div className="aspect-video relative">
         {recipe.image ? (
-          <img 
+          <Image 
             src={'images/'+recipe.image} 
             alt={recipe.title} 
             className="w-full h-full object-cover"

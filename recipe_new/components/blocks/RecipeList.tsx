@@ -3,14 +3,12 @@
 import React, { useEffect, useState } from 'react';
 import RecipeCard from './RecipeCard';
 import { Recipe } from '@/utils/types';
-import { Button } from '../ui/button';
 import Link from 'next/link';
-import RecipeService from '@/lib/services/recipe';
 import { recipesData } from '@/utils/seedData';
 
 
 const RecipeList = () => {
-  const [recipes, setRecipes] = useState<Recipe[]>(recipesData);
+  const [recipes, setRecipes] = useState<Recipe[]>([]);
   const [sortBy, setSortBy] = useState<'newest' | 'oldest' | 'rating'>('newest');
   const [searchQuery, setSearchQuery] = useState('');
   const [minRating, setMinRating] = useState<number | ''>('');
@@ -25,6 +23,10 @@ const RecipeList = () => {
 
     return (matchesTitle || matchesIngredients) && matchesRating;
   });
+
+  useEffect(()=>{
+    setRecipes(recipesData);
+  }, [])
 
   // Trier les recettes filtrées
   const sortedRecipes = [...filteredRecipes].sort((a, b) => {

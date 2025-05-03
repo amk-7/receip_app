@@ -1,10 +1,10 @@
 "use client";
 
 import RecipeDetail from "@/components/blocks/RecipeDetail";
-import RecipeService from "@/lib/services/recipe";
+import { recipesData } from "@/utils/seedData";
 import { Recipe } from "@/utils/types";
 import { useParams, useRouter } from "next/navigation";
-import { use, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function RecipeDetailPage() {
     const { id } = useParams();
@@ -14,13 +14,13 @@ export default function RecipeDetailPage() {
 
     useEffect(() => {
         const fetchRecipe = async () => {
-            const _recipe: Recipe | null = await RecipeService.getRecipe(recipeId);
+            const _recipe: Recipe | null = recipesData.find((recipe: Recipe) => recipe.id === recipeId) || null;
             setRecipe(_recipe);
             console.log(_recipe);
             
         };
         fetchRecipe();
-    }, [])
+    }, [recipeId])
 
     if (!recipe) {
         return (

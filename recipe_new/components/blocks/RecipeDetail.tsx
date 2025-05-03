@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import { Recipe } from "@/utils/types";
 import { Button } from "@/components/ui/button";
-import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
+import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { useAuth } from "@/context/AuthProvider";
 import { cn } from "@/lib/utils";
+import Image from "next/image";
 
 interface RecipeDetailProps {
   recipe: Recipe;
@@ -55,7 +56,7 @@ const RecipeDetail: React.FC<RecipeDetailProps> = ({ recipe, onBack, onEdit }) =
         <div className="lg:w-1/2">
           <div className="rounded-lg overflow-hidden mb-6">
             {recipe.image ? (
-              <img
+              <Image
                 src={recipe.image}
                 alt={recipe.title}
                 className="w-full object-cover"
@@ -158,7 +159,7 @@ const RecipeDetail: React.FC<RecipeDetailProps> = ({ recipe, onBack, onEdit }) =
                   <span className="text-orange-500 mr-3">{idx + 1}</span>
                   <div className="mr-4 flex-shrink-0 w-8 h-8 bg-gray-100 rounded-full flex items-center justify-center">
                     {ingredient.image && (
-                      <img
+                      <Image
                         src={"https://images.pexels.com/photos/842571/pexels-photo-842571.jpeg?auto=compress&cs=tinysrgb&w=300"}
                         alt={ingredient.name}
                         className="w-6 h-6 rounded-full object-cover"
