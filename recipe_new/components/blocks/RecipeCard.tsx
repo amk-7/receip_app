@@ -20,7 +20,7 @@ const RecipeCard: React.FC<RecipeCardProps> = ({ recipe, onClick }) => {
           <Image 
             width={200}
             height={300}
-            src={'/images/'+recipe.image} 
+            src={"/images/"+recipe.image} 
             alt={recipe.title} 
             className="w-full h-full object-cover"
           />
